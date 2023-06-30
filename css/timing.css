@@ -1,3 +1,4 @@
+/* same root file used in style.css  */
 :root{
     --green: #16a085;
     --black: #444;
@@ -7,6 +8,8 @@
     --border: .2rem solid var(--green);
     --red: #e40909;
 }
+
+/* timing section css which is located in timing.html */
 
 th, td{
     border: 1px solid black;
