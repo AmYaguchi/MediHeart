@@ -5,4 +5,4 @@ MediHeart is a simple Hospital clinic website. It is a responsive medical websit
 
 ## Website Output
 
-You can view this website from [here](www.google.com)!
+You can view this website from [here](https://medi-heart.vercel.app/)!
