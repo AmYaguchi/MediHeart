@@ -1,0 +1,130 @@
+:root{
+    --green: #16a085;
+    --black: #444;
+    --light-color: #777;
+    --box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+    --text-shadow: .4rem .4rem 0 rgba(0, 0, 0, .2);
+    --border: .2rem solid var(--green);
+    --red: #e40909;
+}
+
+.contact .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 2rem;
+}
+
+.contact .box-container .box{
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    text-align: center;
+    padding: 3.5rem;
+}
+
+.contact .box-container .box:hover{
+    box-shadow: 10px 10px 20px grey;
+}
+
+.contact .box-container .box i{
+    color: var(--green);
+    font-size: 5rem;
+    padding-bottom: .5rem;
+}
+
+.contact .box-container .box h3{
+    color: var(--black);
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+.contact .box-container .box p{
+    color: var(--light-color);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+.sufb .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.sufb .row .image{
+    flex: 1 1 45rem;
+}
+
+.sufb .row .image img{
+    width: 100%;
+}
+
+.sufb .row form:hover{
+    box-shadow: 10px 10px 20px grey;
+}
+
+.sufb .row form{
+    flex: 1 1 45rem;
+    background: #fff;
+    border: var(--border);
+    box-shadow: var(--box-shadow); 
+    text-align: center;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.sufb .row form h3{
+    color: var(--black);
+    padding-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.sufb .row form .select{
+    padding: 8px 12px;
+    color: var(--black);
+    border: var(--border);
+    cursor: pointer;
+    border-radius: .5rem;
+}
+
+.sufb .row form .select:focus,
+.sufb .row form .select:hover{
+    outline: none;
+    border: var(--border);
+}
+
+.sufb .row form .select option{
+   background-color: white; 
+}
+
+.sufb .row form .box{
+    width: 100%;
+    margin: .7rem 0;
+    border-radius: .5rem;
+    border: var(--border);
+    font-size: 1.6rem;
+    color: var(--red);
+    text-transform: none; 
+    padding: 1rem;
+    /* box-shadow: 10px 10px 20px grey; */
+}
+
+.sufb .row form .problem{
+    width: 100%;
+    margin-top: .7rem;
+    border: var(--border);
+    border-radius: .5rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+    padding-bottom: 10rem;
+}
+
+/* .appointment .row form .problem::after{
+    content: "\a";
+    white-space: inherit;
+} */
+
+.sufb .row form .btn{
+    padding: 1rem 4rem;
+}

@@ -1,0 +1,66 @@
+:root{
+    --green: #16a085;
+    --black: #444;
+    --light-color: #777;
+    --box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+    --text-shadow: .4rem .4rem 0 rgba(0, 0, 0, .2);
+    --border: .2rem solid var(--green);
+    --red: #e40909;
+}
+
+th, td{
+    border: 1px solid black;
+}
+
+table{
+    width: 100%;
+    padding: 1.8rem;
+    /* width: 30%; */
+    /* font-size: 3rem; */
+}
+
+.timings .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.timings .row .img{
+    flex: 1 1 45rem;
+}
+
+.timings .row .img img{
+    width: 100%;
+}
+
+.timings .row .table table{
+    flex: 1 1 45rem;
+    /* background: #fff; */
+    /* border: var(--border); */
+    /* box-shadow: var(--box-shadow);  */
+    text-align: center;
+    padding: 2rem;
+    border-radius: .5rem;
+    font-size: 3rem;
+    border-spacing: .5rem;
+} 
+
+.timings .row .table tbody tr .timing{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.timings .row .table tbody tr .wed{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.timings .row p{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.timings .row p u{
+    text-decoration: underline;
+}

@@ -1,0 +1,94 @@
+/* same root file used in style.css  */
+:root{
+    --green: #16a085;
+    --black: #444;
+    --light-color: #777;
+    --box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+    --text-shadow: .4rem .4rem 0 rgba(0, 0, 0, .2);
+    --border: .2rem solid var(--green);
+    --red: #e40909;
+}
+
+/* appointment css starts */
+.appointment .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.appointment .row .image{
+    flex: 1 1 45rem;
+}
+
+.appointment .row .image img{
+    width: 100%;
+}
+
+.appointment .row form:hover{
+    box-shadow: 10px 10px 20px grey;
+}
+
+.appointment .row form{
+    flex: 1 1 45rem;
+    background: #fff;
+    border: var(--border);
+    box-shadow: var(--box-shadow); 
+    text-align: center;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.appointment .row form h3{
+    color: var(--black);
+    padding-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.appointment .row form .box{
+    width: 100%;
+    margin: .7rem 0;
+    border-radius: .5rem;
+    border: var(--border);
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none; 
+    padding: 1rem;
+    /* box-shadow: 10px 10px 20px grey; */
+}
+
+.appointment .row form .box-half-app{
+    display: flex;
+    justify-content: space-between;
+}
+
+.appointment .row form .box-half-app .box-half{
+    width: 47%;
+    margin: .7rem 0;
+    border-radius: .5rem;
+    border: var(--border);
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none; 
+    padding: 1rem;
+}
+
+.appointment .row form .problem{
+    width: 100%;
+    margin-top: .7rem;
+    border: var(--border);
+    border-radius: .5rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+    padding-bottom: 10rem;
+}
+
+/* .appointment .row form .problem::after{
+    content: "\a";
+    white-space: inherit;
+} */
+
+.appointment .row form .btn{
+    padding: 1rem 4rem;
+}
