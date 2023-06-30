@@ -101,6 +101,8 @@ section:nth-child(even){
     align-items: center;
     justify-content: space-between;
     background: #fff;
+    position: fixed;
+    width: 100%;
 }
 
 .sticky{
