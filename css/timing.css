@@ -18,13 +18,13 @@ th, td{
 table{
     width: 100%;
     padding: 1.8rem;
-    /* width: 30%; */
-    /* font-size: 3rem; */
+    border-collapse: collapse;
 }
 
 .timings .row{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
 }
@@ -47,7 +47,14 @@ table{
     border-radius: .5rem;
     font-size: 3rem;
     border-spacing: .5rem;
+    overflow: hidden;
+    width: 100%;
 } 
+/* 
+.timings .row .table{
+    max-width: 100%;
+    overflow-x: auto;
+} */
 
 .timings .row .table tbody tr .timing{
     padding-left: 1rem;
@@ -66,4 +73,32 @@ table{
 
 .timings .row p u{
     text-decoration: underline;
+}
+/* making tables responsive for mobile devicies */
+@media(max-width: 500px){
+    .timings .row .table table thead{
+        display: none;
+    }
+    .timings .row .table table, .timings .row .table table tbody, .timings .row .table table tbody tr, .timings .row .table table tbody td{
+        display: block;
+        width: 100%;
+    }
+    .timings .row .table table tbody tr{
+        margin-bottom: 15px;
+    }
+    .timings .row .table table tbody td{
+        text-align: center;
+        /* padding-left: 50%; */
+        position: relative;
+    }
+    .timings .row .table table tbody td::before{
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        /* padding-left: 50px; */
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+    }
 }
